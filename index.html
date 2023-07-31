@@ -37,26 +37,7 @@
 </head>
 <body>
 	<script>
-		// AOS.init({
-		// 	duration: 1200,
-		// 	easing: 'ease-in-out-back'
-		// });
-		// AOS
 
-	var myAOS = function() {
-
-		AOS.init({
-			duration: 1500,
-		easing: 'ease-in-out-back',
-		// easing: 'linear',
-		//    data-aos-easing="linear" 
-		
-
-		});
-
-}
-
-//myAOS();
 	</script>
 <div id="wrapper" class="main_all">
 	<!--  헤더 -->
@@ -184,21 +165,21 @@
 				</div>
 				<div class="box2">
 					<ul>
-						<li data-aos="fade-up" data-aos-delay="400">
+						<li data-aos="fade-up" data-aos-delay="200">
 							<p>클라우드 구독</p>
 							<span>축적된 노하우 기반으로 요구사항을 분석하여 
 								체계적으로 기존 환경을 진단하고 고객의 
 								비즈니스 목표달성에 마이그레이션방식을
 								 설계 및 수행합니다. </span>
 						</li>
-						<li data-aos="fade-up" data-aos-delay="800">
+						<li data-aos="fade-up" data-aos-delay="400">
 							<p>클라우드 보안</p>
 							<span>다양한 대응 방안을 제공하며, 지속적인 
 								모니터링은 물론 보안 관제 전문 엔지니어의 
 								신속한 장애 대응이 가능하며 안정적인 
 								서비스를 제공합니다. </span>
 						</li>
-						<li data-aos="fade-up" data-aos-delay="1200">
+						<li data-aos="fade-up" data-aos-delay="600">
 							<p>클라우드 운영</p>
 							<span>고객의 산업, 기술 및 업무에 대한 높은 이해와 
 								효율성과 안전성을 갖추며 높은 퀄리티의 
@@ -290,8 +271,8 @@ $('body').on("scroll", function () {
 //길어 질때 
 		AOS.init({
 			once: true,
-			duration: 1500,
-			easing: 'ease-in-out-back',
+			duration: 1000,
+			easing: 'ease-in-out-cubic',
 		});
 		$(window).on('load', function () {
             AOS.refresh();

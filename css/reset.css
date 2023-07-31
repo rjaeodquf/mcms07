@@ -105,17 +105,17 @@ button,html input[type="button"], /* 1 */ input[type="reset"],input[type="submit
 button[disabled],html input[disabled] {cursor: default}
 button::-moz-focus-inner,input::-moz-focus-inner {border: 0;padding: 0}
 input {padding:10px;border:1px solid #f6f6f6;background-color: #f6f6f6;border:1px solid #bebebe;border-radius: 18px;box-sizing: border-box;display: inline-block;}
-input:active {border:1px solid #091c54}
-input:focus {border:1px solid #091c54}
-input:hover {border:1px solid #091c54}
+input:active {box-shadow: 0 0 0px 1px #091c54;}
+input:focus {box-shadow: 0 0 0px 1px #091c54;}
+input:hover {box-shadow: 0 0 0px 1px #091c54;}
 input[type="checkbox"]{width:20px;height:20px;vertical-align: middle}
 input[type="radio"]{width:20px;height:20px;margin: 0;vertical-align:middle}
 input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration	{-webkit-appearance: none}
 
 select {padding:10px;border:1px solid #f6f6f6;background-color: #f6f6f6;border:1px solid #bebebe;border-radius: 18px;box-sizing: border-box;display: inline-block}
 .textarea_box {padding:5px 10px;border:1px solid #f6f6f6;background-color: #f6f6f6;border:1px solid #bebebe;border-radius: 18px;box-sizing: border-box;display: inline-block}
-.textarea_box textarea {width:100%;height:100%;;padding:10px; border:0 !important;background-color: #f6f6f6;border:1px solid #bebebe;box-sizing: border-box;display: inline-block}
-.textarea_box textarea:focus,.textarea_box textarea:active {box-shadow: none;border:0;}
+.textarea_box textarea {width:100%;height:100%;;padding:10px; border:0 !important;background-color: #f6f6f6;border:1px solid #bebebe;box-sizing: border-box;display: inline-block;resize: none;}
+.textarea_box textarea:focus,.textarea_box textarea:active {box-shadow: none;border:0;outline: 0;}
 input[type='tel'],input[type='url'],input[type='number'], input[type='email'], input[type='text'], input[type='password'], input[type="search"] {
 	-webkit-appearance: textfield; /* 1 */
 	-moz-box-sizing: border-box;
@@ -161,8 +161,8 @@ input[type='tel'],input[type='url'],input[type='number'], input[type='email'], i
 .star {
 	width: 2px;
 	height: 2px;
-	background: #fff;
-	box-shadow: 0 0 3px #fff;
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.7);
 	position: absolute;
 	left: 50%;
 	top: 50%;
