@@ -178,7 +178,7 @@ body{overflow-x: hidden}
     .section02 .sinner {flex-direction: column-reverse}
     .section02 .box1 {margin: 50px auto 0 auto;width:100% ;}
     .section02 .box1 .imgs {position: relative;top:auto;left:auto;right:auto;width:calc(100% / 3);height:200px;padding:5px;overflow:hidden ;}
-    .section02 .box1 .imgs img {max-width: 100%;}
+    .section02 .box1 .imgs img {width:auto;height:auto;min-height: 100%;max-width: 100%;}
     .section02 .box2 {margin-top:0}
     .section02 .box2 .main_title {margin-top:0;width:calc(100% - 150px) ;}
     .section02 .main_title h3 {letter-spacing: -0.5px;white-space:normal;word-break: keep-all;}
@@ -205,12 +205,22 @@ body{overflow-x: hidden}
 
      /*메인섹션3*/
      .section03 .box {}
-     .section03 .advice_box {padding: 0 2%;display: flex;justify-content: center;max-height:50%;height:50vh;align-items: center}
-     .section03 .experience_box {padding: 0 2%;display: flex;justify-content: center;max-height:50%;height:50vh;align-items: center}
-     .section03 .advice_box p {font-size: 30px;word-break: keep-all;white-space: pre-line;}
-     .section03 .advice_box span {font-size: 18px;}
-     .section03 .experience_box p {font-size: 30px;word-break: keep-all;}
-     .section03 .experience_box span {font-size: 18px;}
+     .section03 .advice_box {/*padding: 0 2%;*/padding:30px 2%;display: flex;justify-content: center;min-height: 270px;align-items: center}
+     .section03 .experience_box {padding:30px 2%;display: flex;justify-content: center;min-height: 270px;align-items: center}
+     .section03 .advice_box p {font-size: 26px;word-break: keep-all;white-space: pre-line;}
+     .section03 .advice_box span {font-size: 16px;}
+     .section03 .experience_box p {font-size: 26px;word-break: keep-all;}
+     .section03 .experience_box span {font-size: 16px;}
+
+     @media (orientation: landscape) {
+        /* Landscape 모드일 때 적용할 CSS */
+        .section03 .advice_box {height:50%;min-height: 270px;}
+        .section03 .experience_box  {height:50%;min-height: 270px;}
+        .section03 .advice_box  span {margin:28px 0 30px 0}
+        .section03 .experience_box span {margin:28px 0 30px 0}
+    }
+
+
 
      /*푸터*/
      .footer_all .sinner {flex-direction: column;padding:30px 0}
@@ -230,14 +240,19 @@ body{overflow-x: hidden}
  @media screen and (max-width: 450px){
     #mo_nav {width: 100%;}
     .view_btn button {font-size: 0;}
+    .main_title h3 {font-size:26px}
+    .main_title h2 {font-size:30px}
+    .main_title span {font-size:16px}
     /*메인섹션1*/
      .section01 .box2 ul li span {top: 60%; transform: translateY(-73%);}
 
      /*메인섹션2*/
      .section02 .box2 .main_title {margin-top:0;width:calc(100% - 56px) ;}
+     .section02 .main_title h3 {width:80%;}
      .section02 .box1 {flex-wrap: wrap;}
-     .section02 .box1 .imgs {width: calc(100% / 1);padding:5px;height:auto;min-height:200px}
-     .section02 .box1 .imgs img {min-width: 100%;}
+     .section02 .box1 .imgs {padding:0 2px;height:150px}
+     /* .section02 .box1 .imgs {width: calc(100% / 1);padding:5px;height:auto;min-height:200px}
+     .section02 .box1 .imgs img {min-width: 100%;} */
 
     /*메인섹션3*/
     .section03 .advice_box {height:auto;padding:40px 2%;min-height: 300px;}

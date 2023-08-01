@@ -66,7 +66,7 @@ option{font-size: 15px !important;color: #333 !important;padding:15%;}
 
 /* 이미지 요소 기본 */
 /* img {vertical-align:middle;width: 100%;height: auto;vertical-align: middle;border:0;-ms-interpolation-mode:bicubic;-webkit-tap-highlight-color:rgba(0,0,0,0) } */
-img {vertical-align:middle;width: auto;height: auto;vertical-align: middle;border:0;-ms-interpolation-mode:bicubic;-webkit-tap-highlight-color:rgba(0,0,0,0) }
+img {vertical-align:middle;width: auto;height: auto;vertical-align: middle;border:0;-ms-interpolation-mode:bicubic;-webkit-tap-highlight-color:rgba(0,0,0,0);object-fit: cover;object-position: center; }
 
 /* ime-mode */
 .imeOff {ime-mode:disabled}
